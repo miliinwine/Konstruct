@@ -1,0 +1,324 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #48555B;
+    font-style: normal;
+    line-height: normal;
+}
+
+$first-font-color: #48555B;
+$second-font-color: #00A4E5;
+$color: #FFF;
+
+.header {
+    width: 1438px;
+    height: 769px;
+    text-align: center;
+    color: $color;
+    background-image: url(../images/Konstruct.png);
+
+    &__logo {
+        margin-top: 41px;
+    }
+
+    &__title {
+        margin-top: 305px;
+        font-family: "Bebas Neue";
+        font-size: 60px;
+        font-weight: 400;
+        letter-spacing: 5.709px;
+    }
+
+    &__text {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    &__footer {
+        margin-top: 221px;
+        color: $color;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 3.7px;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.menu {
+    width: 1438px;
+    padding: 0 249px 0 249px;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        gap: 47px;
+    }
+
+    &__link {
+        color: $first-font-color;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.091px;
+
+        &:hover {
+            color: $second-font-color;
+        }
+    }
+}
+
+.line {
+    width: 1438px;
+    border: 1px solid #E6E6E6;
+}
+
+.history {
+    margin: 0 247px 0 252px;
+    width: 941px;
+    margin-top: 48px;
+
+    &__title {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 2.306px;
+
+        &:after {
+            content: "";
+            display: block;
+            margin: 0 auto;
+            margin-top: 11px;
+            border-bottom: 2px solid $second-font-color;
+            width: 50px;
+        }
+    }
+
+    &__items {
+        margin-top: 81px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__texts {
+        width: 405.076px;
+        height: 226px;
+        gap: 30px;
+        display: flex;
+        flex-direction: column;
+        color: #48555B;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 23px;
+        letter-spacing: 0.188px;
+    }
+
+    &__text {
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 0.188px;
+
+        span {
+            color: $second-font-color;
+        }
+    }
+
+    &__images {
+        gap: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__image {
+        margin: 15px 0 0 15px;
+        position: absolute;
+        color: #FFF;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        letter-spacing: 0.188px;
+    }
+}
+
+.services {
+    width: 940px;
+    margin: 127px 250px 115px 250px;
+    height: 446px;
+
+    &__title {
+        color: #48555B;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 2.306px;
+
+        &:after {
+            content: "";
+            display: block;
+            margin-top: 10px;
+            border-bottom: 2px solid $second-font-color;
+            width: 50px;
+        }
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: 323px 406px 150px;
+        gap: 30px;
+    }
+
+    &__text {
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0.2px;
+    }
+
+    &__button {
+        width: 150px;
+        height: 40px;
+        background-color: $second-font-color;
+        border: none;
+        color: $color;
+        color: #FFF;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+    }
+
+    &__cards {
+        margin-top: 78px;
+        display: flex;
+        justify-content: space-between;
+        gap: 28px;
+    }
+
+    &__card {
+        width: 295px;
+        height: 330px;
+        border: 1px solid #E6E6E6;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 23px;
+        letter-spacing: 0.188px;
+    }
+
+    &__icon {
+        width: 70.588px;
+        height: 75px;
+        margin: 38px 0 0 23px;
+    }
+
+    &__card-title {
+        margin: 25px 0 0 23px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0.427px;
+    }
+
+    &__card-text {
+        margin: 13px 22px 32px 23px;
+    }
+}
+
+.work {
+    width: 1440px;
+    height: 498.24px;
+    padding: 120px 0 0 0;
+    height: 498.24px;
+    background-image: url(../images/Last.png);
+
+    &__title {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: 0.15px;
+    }
+
+    &__button {
+        margin: 35px 0 0 645px;
+        width: 150px;
+        height: 40px;
+        background-color: $second-font-color;
+        border: none;
+        color: $color;
+        color: #FFF;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+    }
+}
+
+.footer {
+    width: 1440px;
+    padding-top: 30px;
+    height: 160px;
+    background: #171819;
+
+    &__items {
+        margin: 0 auto;
+        width: 685px;
+        display: flex;
+        justify-content: space-between;
+        a{
+            position: absolute;
+        }
+    }
+
+    &__title {
+        color: #FFF;
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 0.846px;
+    }
+
+    &__input {
+        width: 400px;
+        height: 40px;
+        padding-left: 16px;
+        outline: none;
+    }
+
+    &__button {
+        position: absolute;
+        margin-left: 535px;
+        width: 150px;
+        height: 40px;
+        background-color: $second-font-color;
+        border: none;
+        color: $color;
+        color: #FFF;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+    }
+
+    &__text {
+        margin-top: 51px;
+        text-align: center;
+        color: #FFF;
+        font-size: 11px;
+        font-weight: 400;
+        letter-spacing: 0.846px;
+    }
+}
+    
